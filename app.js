@@ -1,4 +1,4 @@
-particles("particles-js",{
+particlesJS("particles-js",{
   "particles": {
     "number": {
       "value": 189,
