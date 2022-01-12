@@ -1,0 +1,19 @@
+{
+	"articles": [
+	{
+		"title": "Lightshot Crawler",
+		"desc": "Find Random Screenshots by guessing the Link",
+		"image": "res/LS_Crawler.png"
+	},
+	{
+		"title": "Lightshot Crawler",
+		"desc": "Find Random Screenshots by guessing the Link",
+		"image": "res/LS_Crawler.png"
+	},
+	{
+		"title": "Lightshot Crawler",
+		"desc": "Find Random Screenshots by guessing the Link",
+		"image": "res/LS_Crawler.png"
+	}
+	]
+}

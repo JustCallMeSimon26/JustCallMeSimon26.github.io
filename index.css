@@ -1,0 +1,35 @@
+/* Removes Borders */
+.html,body {
+	margin: 0px;
+}
+
+/* Divides page*/
+.row {
+	display: flex;
+	height: 100%;
+	min-height: 100%;
+}
+
+/* Restricts Content to middle of Page */
+.content {
+	height: 100vh;
+	width: 84%;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+/* Create two equal columns that sits next to each other */
+.left,.right {
+	flex: 50%; /* Value is not important */	
+}
+
+/* Class for the Logo */
+.logo {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	display: block;
+	margin: auto;
+	left: 50%;	
+	transform: translate(-80%,50%);
+}
