@@ -1,6 +1,7 @@
 /* Removes Borders */
 .html,body {
 	margin: 0px;
+	background-color: #131516;
 }
 
 /* Divides page*/
