@@ -3,17 +3,20 @@
 	{
 		"title": "Lightshot Crawler",
 		"desc": "Find Random Screenshots by guessing the Link",
-		"image": "res/LS_Crawler.png"
+		"image": "res/LS_Crawler.png",
+		"link": "Lightshot-Crawler"
 	},
 	{
 		"title": "Lightshot Crawler",
 		"desc": "Find Random Screenshots by guessing the Link",
-		"image": "res/LS_Crawler.png"
+		"image": "res/LS_Crawler.png",
+		"link": "Lightshot-Crawler"
 	},
 	{
 		"title": "Lightshot Crawler",
 		"desc": "Find Random Screenshots by guessing the Link",
-		"image": "res/LS_Crawler.png"
+		"image": "res/LS_Crawler.png",
+		"link": "Lightshot-Crawler"
 	}
 	]
 }
