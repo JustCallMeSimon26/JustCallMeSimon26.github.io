@@ -7,9 +7,9 @@ function addArticles(path) {
 	.then(response => response.json())
 	.then(data => {
 		const rightSide = document.getElementById('right')
-		for (let articleIndex = 0; articleIndex < data.length; articleIndex++) {
+		for (let articleIndex = 0; articleIndex < data.articles.length; articleIndex++) {
 			
-			const titleText = document.createTextNode(data[articleIndex]["title"])
+			const titleText = document.createTextNode(data["articles"][articleIndex]["title"])
 			
 			const articleTitle = document.createElement("h2")
 			articleTitle.appendChild(titleText)
@@ -17,18 +17,18 @@ function addArticles(path) {
 			
 			const articleTitleContainer = document.createElement("div")
 			articleTitleContainer.appendChild(articleTitle)
-			articleTitleContainer.classlist.add('article-title')
+			articleTitleContainer.classList.add('article-title')
 			
 			const articleImage = document.createElement("img")
-			articleImage.src = data[articleIndex]["image"]
+			articleImage.src = data["articles"][articleIndex]["image"]
 			articleImage.alt = "Thumbnail goes here"
 			articleImage.classList.add('article-thumbnail-image')
 
 			const articleImageContainer = document.createElement("div")
 			articleImageContainer.appendChild(articleImage)
-			articleImageContainer.classlist.add('article-thumbnail')
+			articleImageContainer.classList.add('article-thumbnail')
 
-			const descriptionText = document.createTextNode(data[articleIndex]["desc"])
+			const descriptionText = document.createTextNode(data["articles"][articleIndex]["desc"])
 			
 			const articleDescription = document.createElement("h2")
 			articleDescription.appendChild(descriptionText)
@@ -36,13 +36,13 @@ function addArticles(path) {
 
 			const articleDescriptionContainer = document.createElement("div")
 			articleDescriptionContainer.appendChild(articleDescription)
-			articleDescriptionContainer.classlist.add("article-description")
+			articleDescriptionContainer.classList.add("article-description")
 
 			const articleContainer = document.createElement("div")
 			articleContainer.appendChild(articleTitleContainer)
 			articleContainer.appendChild(articleImageContainer)
 			articleContainer.appendChild(articleDescriptionContainer)
-			articleContainer.classlist.add('article')
+			articleContainer.classList.add('article')
 			
 			rightSide.appendChild(articleContainer)
 			}
