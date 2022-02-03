@@ -1,10 +1,14 @@
+//Json Path. Up here if i ever need to change it for... some odd reason
+const articlesPath = "articles/articles.json"
+
+
 function addArticles(path) {
 	fetch(path)
 	.then(response => response.json())
 	.then(data => {
 		const rightSide = document.getElementById('right')
 		for (let articleIndex = 0; articleIndex < data.length; articleIndex++) {
-		
+			
 			const titleText = document.createTextNode(data[articleIndex]["title"])
 			
 			const articleTitle = document.createElement("h2")
@@ -46,5 +50,4 @@ function addArticles(path) {
 	)
 }
 
-const articlesPath = "articles/articles.json"
 addArticles(articlesPath)
