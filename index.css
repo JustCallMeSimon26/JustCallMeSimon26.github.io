@@ -46,6 +46,11 @@
 	flex: 50%;
 }
 
+.right{
+	display: flex;
+	flex-direction: column;	
+}
+
 /* Position Logo according to Vars centered */
 .logo {
 	position: relative;
@@ -53,6 +58,20 @@
 	height: var(--Logo-Radius);
 	top: calc(50% - var(--Logo-Radius) / 2);
 	left: calc(50% - var(--Logo-Radius) / 2);
+}
+
+.middleArticle {
+	padding-top: 2px;
+	padding-bottom: 2px; 
+}
+
+.bottomArticle{
+	padding-bottom: 3%;
+}
+
+.upperArticle{
+	padding-top: 3%;
+
 }
 
 /* Position Article according to Vars centered*/
