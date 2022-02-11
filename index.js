@@ -43,27 +43,35 @@ function addArticles(path) {
 			articleContainer.appendChild(articleImageContainer)
 			articleContainer.appendChild(articleDescriptionContainer)
 			articleContainer.classList.add('article')
+			if (articleIndex == 0) {
+				articleContainer.classList.add("active")
+			} else {
+				articleContainer.classList.add("inactive")
+			}
 			
-			switch(articleIndex) {
-				case 0:
-					const upperArticle = document.createElement("div")
-					upperArticle.classList.add("upperArticle")
-					upperArticle.appendChild(articleContainer)
-					rightSide.appendChild(upperArticle)
-					break
-					case 1:
-					const middleArticle = document.createElement("div")
-					middleArticle.classList.add("middleArticle")
-					middleArticle.appendChild(articleContainer)
-					rightSide.appendChild(middleArticle)
-					break
-					case 2:
-					const bottomArticle = document.createElement("div")
-					bottomArticle.classList.add("bottomArticle")
-					bottomArticle.appendChild(articleContainer)
-					rightSide.appendChild(bottomArticle)
-					break
-				}
+			rightSide.appendChild(articleContainer)
+			
+			// Works but is bad
+			// switch(articleIndex) {
+			// 	case 0:
+			// 		const upperArticle = document.createElement("div")
+			// 		upperArticle.classList.add("upperArticle")
+			// 		upperArticle.appendChild(articleContainer)
+			// 		rightSide.appendChild(upperArticle)
+			// 		break
+			// 		case 1:
+			// 		const middleArticle = document.createElement("div")
+			// 		middleArticle.classList.add("middleArticle")
+			// 		middleArticle.appendChild(articleContainer)
+			// 		rightSide.appendChild(middleArticle)
+			// 		break
+			// 		case 2:
+			// 		const bottomArticle = document.createElement("div")
+			// 		bottomArticle.classList.add("bottomArticle")
+			// 		bottomArticle.appendChild(articleContainer)
+			// 		rightSide.appendChild(bottomArticle)
+			// 		break
+			// 	}
 
 		}
 		}
