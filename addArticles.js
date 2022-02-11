@@ -78,4 +78,20 @@ function addArticles(path) {
 	)
 }
 
-addArticles(articlesPath)
+function Sleep(milliseconds) {
+	return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
+function arrange() {
+	const articlesHTML = document.getElementsByClassName("article")
+	const articles = Array.from(articlesHTML);
+	console.log(articles)
+}
+
+async function main() {
+	addArticles(articlesPath)
+	await Sleep(300)
+	arrange()
+}
+
+main()
