@@ -47,6 +47,7 @@
 }
 
 .right{
+	position: relative;
 	display: flex;
 	flex-direction: column;	
 }
@@ -74,9 +75,17 @@
 
 }
 
+.active {
+	opacity: 100;
+}
+
+.inactive {
+	opacity: 0;
+}
+
 /* Position Article according to Vars centered*/
 .article {
-	position: relative;
+	position: absolute;
 	width: var(--Article-width);
 	height: var(--Article-height);
 	top: calc(50% - var(--Article-height) / 2);
