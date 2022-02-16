@@ -6,7 +6,8 @@ function addArticles(path) {
 	fetch(path)
 	.then(response => response.json())
 	.then(data => {
-		const rightSide = document.getElementById('right')
+		const rightSide = document.getElementById("right")
+		const carousel = document.createElement("div")
 		for (let articleIndex = 0; articleIndex < data.articles.length; articleIndex++) {
 			
 			const titleText = document.createTextNode(data["articles"][articleIndex]["title"])
@@ -43,14 +44,10 @@ function addArticles(path) {
 			articleContainer.appendChild(articleImageContainer)
 			articleContainer.appendChild(articleDescriptionContainer)
 			articleContainer.classList.add('article')
-			if (articleIndex == 0) {
-				articleContainer.classList.add("active")
-			} else {
-				articleContainer.classList.add("inactive")
-			}
 			
-			rightSide.appendChild(articleContainer)
-			
+			carousel.appendChild(articleContainer)
+			carousel.classList.add("carousel")
+
 			// Works but is bad
 			// switch(articleIndex) {
 			// 	case 0:
@@ -74,6 +71,7 @@ function addArticles(path) {
 			// 	}
 
 		}
+		rightSide.appendChild(carousel)
 		}
 	)
 }

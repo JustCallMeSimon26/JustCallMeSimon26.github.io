@@ -5,7 +5,7 @@
 	/* Logo */
 	--Logo-Radius: 400px;
 	/* Article */
-	--Article-height: 250px;
+	--Article-height: 230px;
 	--Article-width: 600px;
 	--Article-backtround-color: #00000040;
 	/* Article Layout */
@@ -21,6 +21,7 @@
 	--Article-title-font-size: 36px;
 	--Article-description-font-size: 28px
 }
+
 
 /* Fill Screen */
 .html,body {
@@ -48,8 +49,6 @@
 
 .right{
 	position: relative;
-	display: flex;
-	flex-direction: column;	
 }
 
 /* Position Logo according to Vars centered */
@@ -75,17 +74,9 @@
 
 }
 
-.active {
-	opacity: 100;
-}
-
-.inactive {
-	opacity: 0;
-}
-
 /* Position Article according to Vars centered*/
 .article {
-	position: absolute;
+	position: relative;
 	width: var(--Article-width);
 	height: var(--Article-height);
 	top: calc(50% - var(--Article-height) / 2);
@@ -97,7 +88,6 @@
 	background-color: var(--Article-background-color);
 	box-shadow: 0px 4px 8px 4px #00000040;
 }
-
 /* Style for the Article title */
 .article-title {
 	display: flex;
