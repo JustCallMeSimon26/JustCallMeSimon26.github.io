@@ -2,6 +2,7 @@
 :root {
 	/* Site */
 	--Site-Background:  #131516;
+	--Nav-Background: #202224;
 	/* Logo */
 	--Logo-Radius: 400px;
 	/* Article */
@@ -25,12 +26,60 @@
 
 /* Fill Screen */
 .html,body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 	margin: 0px;
 	background-color: var(--Site-Background);
 }
 
+.content {
+	margin-top: 50px;
+}
+
+.nav {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	background: var(--Nav-Background);
+	width: 100%;
+	height: 70px;
+}
+
+.footer {
+	text-align: center;
+}
+
+.Title {
+	text-decoration: underline;
+	font-size: 40pt;
+	color: red;
+	margin: 0px;
+	animation: rainbow 10s infinite linear;
+}
+
+@keyframes rainbow {
+	12.5% {color:red;}
+	25% {color: orange;}
+	37.5% {color: yellow;}
+	50% {color: green;}
+	62.5% {color: cyan;}
+	75% {color: blue;}
+	87.5% {color: purple;}
+	100% {color: red};
+
+	
+	0% { color: red; }
+	50% { color: blue; }
+	100% { color: red; }
+}
+
 /* Position Article according to Vars centered*/
 .article {
+	margin: 30px;
 	position: relative;
 	width: var(--Article-width);
 	height: var(--Article-height);
