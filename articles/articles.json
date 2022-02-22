@@ -1,0 +1,18 @@
+{
+	"articles": [
+		{
+			"title": "Being Lazy",
+			"desc": "No Projects here cause i cant finish shit :c",
+			"image": "articles/res/Lazy.png",
+			"link": ""
+			}
+		],
+	"template": [
+		{
+			"title": "Lightshot Crawler1",
+			"desc": "Find Random Screenshots by guessing the Link",
+			"image": "articles/res/Thumbnail.png",
+			"link": "Lightshot-Crawler"
+			}
+		]
+	}
