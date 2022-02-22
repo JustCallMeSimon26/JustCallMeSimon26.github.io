@@ -29,51 +29,6 @@
 	background-color: var(--Site-Background);
 }
 
-/* Restrict Content to Viewport */
-.content {
-	height: 100vh;
-	margin-left: 8%;
-	margin-right: 8%;
-}
-
-/* Divide Content into 2 equal Sides */
-.rows {
-	display: flex;
-	flex-wrap: nowrap;
-	height: 100%;
-}
-
-.left,.right {
-	flex: 50%;
-}
-
-.right{
-	position: relative;
-}
-
-/* Position Logo according to Vars centered */
-.logo {
-	position: relative;
-	width: var(--Logo-Radius);
-	height: var(--Logo-Radius);
-	top: calc(50% - var(--Logo-Radius) / 2);
-	left: calc(50% - var(--Logo-Radius) / 2);
-}
-
-.middleArticle {
-	padding-top: 2px;
-	padding-bottom: 2px; 
-}
-
-.bottomArticle{
-	padding-bottom: 3%;
-}
-
-.upperArticle{
-	padding-top: 3%;
-
-}
-
 /* Position Article according to Vars centered*/
 .article {
 	position: relative;

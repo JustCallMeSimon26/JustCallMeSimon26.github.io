@@ -6,7 +6,7 @@ function addArticles(path) {
 	fetch(path)
 	.then(response => response.json())
 	.then(data => {
-		const rightSide = document.getElementById("right")
+		const content = document.getElementById("content")
 		const carousel = document.createElement("div")
 		for (let articleIndex = 0; articleIndex < data.articles.length; articleIndex++) {
 			
@@ -71,7 +71,7 @@ function addArticles(path) {
 			// 	}
 
 		}
-		rightSide.appendChild(carousel)
+		content.appendChild(carousel)
 		}
 	)
 }
