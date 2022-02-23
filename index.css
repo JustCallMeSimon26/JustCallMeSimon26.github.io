@@ -79,7 +79,7 @@
 
 /* Position Article according to Vars centered*/
 .article {
-	margin: 30px;
+	margin-top: 30px;
 	position: relative;
 	width: var(--Article-width);
 	height: var(--Article-height);
