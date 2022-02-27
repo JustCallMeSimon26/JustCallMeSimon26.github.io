@@ -1,0 +1,132 @@
+/* Config */
+:root {
+	/* Site */
+	--Site-background:  #131516;
+
+	/* Loading Spinner */
+	--Loading-size: 600px;
+	/* Loading Spinner Speed */
+	--Loading-speed: 2s;
+	/* Loading Text Settings */
+	--Loading-text-font-size: 90px;
+	--Loading-text-color: white;
+	/* Loading Color Settings */
+	--Loading-background: black;
+	/* Loading Ring Settings */
+	--Loading-ring-blur: blur(10px);
+	/* Loading Ring extrusion Settings */
+	--Purple-extrude-length: 7px;
+	--Blue-extrude-length: 7px;
+	--Cyan-extrude-length: 7px;
+	--Green-extrude-length: 7px;
+	--Yellow-extrude-length: 7px;
+	--Orange-extrude-length: 7px;
+	--Red-extrude-length: 7px;
+}
+
+/* Fonts */
+@import url(https://de.allfont.net/allfont.css?fonts=boston-traffic);
+
+/* Utils */
+.noSelect {
+	user-select: none;
+}
+
+/* Fill Screen */
+.html,body {
+	margin: 0px;
+	background-color: var(--Site-background);
+}
+
+/* Restrict Content to Viewport */
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+/* 
+######################### Loading Spinner ##########################
+https://www.codingnepalweb.com/color-changing-shiny-loader-html-css/ 
+*/
+
+.loading-circle {
+	background: var(--Loading-background);
+	border-radius: 50%;
+	height: var(--Loading-size);
+	width: var(--Loading-size);
+}
+
+.loading-text {
+	font-family: "Boston Traffic", arial;
+	font-size: var(--Loading-text-font-size);;
+	color: var(--Loading-text-color);
+}
+
+.center{
+	width: inherit;
+	height: inherit;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Make this into a Psudo Element*/
+.ring{
+	filter: var(--Loading-ring-blur);
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	border-radius: 50%;
+	animation: load var(--Loading-speed) linear infinite;
+}
+
+@keyframes load {
+	0% {
+		box-shadow: var(--Purple-extrude-length) var(--Purple-extrude-length) 2px  purple;
+		transform: rotate(0deg);
+	}
+	12.5% {
+		box-shadow: var(--Purple-extrude-length) var(--Blue-extrude-length) 2px blue;
+		/* transform: rotate(45deg); */
+	}
+	25% {
+		box-shadow: var(--Purple-extrude-length) var(--Cyan-extrude-length) 2px rgb(0, 136, 136);
+		/* transform: rotate(90deg); */
+	}
+	50% {
+		box-shadow: var(--Purple-extrude-length) var(--Green-extrude-length) 2px green;
+		/* transform: rotate(135deg); */
+	}
+	62.5% {
+		box-shadow: var(--Purple-extrude-length) var(--Yellow-extrude-length) 2px yellow;
+		/* transform: rotate(180deg); */
+	}
+	75% {
+		box-shadow: var(--Purple-extrude-length) var(--Orange-extrude-length) 2px orange;
+		/* transform: rotate(225deg); */
+	}
+	88% {
+		box-shadow: var(--Purple-extrude-length) var(--Red-extrude-length) 2px red;
+		/* transform: rotate(270deg); */
+	}
+	100% {
+		box-shadow: var(--Purple-extrude-length) var(--Purple-extrude-length) 2px purple;
+		transform: rotate(360deg);
+	}  
+}
+
+.ring:before {
+	position: inherit;
+	content: '';
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	box-shadow: 0 0 5px rgba(255,255,255,.3);
+}
