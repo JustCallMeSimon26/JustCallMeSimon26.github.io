@@ -6,14 +6,26 @@
     width: 100%;
 }
 
-#container {
-    width: 600px;
+.container {
     height: 600px;
+    width:  600px;
+    background: red;
+    border-radius: 69%;
+    overflow: hidden;
 }
 
-.circle { 
-    fill: none;
-    stroke: purple;
-    stroke-width:30px;
-    filter: blur(10px);
+.list {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.list-item {
+    position: absolute;
+    offset-anchor: center;
+    height: 100px;
+    width: 100px;
+    background: #fff;
+    transform: rotate(45deg);
 }
