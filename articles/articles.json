@@ -1,16 +1,10 @@
 {
 	"articles": [
 		{
-			"title": "Being Lazy",
-			"desc": "No Projects here cause i cant finish shit :c",
+			"title": "Placeholder",
+			"desc": "Placeholder Placeholder Placeholder Placeholder",
 			"image": "articles/res/Lazy.png",
 			"link": ""
-			},
-		{
-			"title": "Almos is bad",
-			"desc": "Almos is a doodoo head. fuck him",
-			"image": "articles/res/Lazy.png",
-			"link": "https://almos.dev"
 			}
 		],
 	"template": [
